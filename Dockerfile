@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.13.5
 
 RUN apk add --no-cache python3 py3-pip git gcc
 ADD https://raw.githubusercontent.com/davido/bazel-alpine-package/master/david@ostrovsky.org-5a0369d6.rsa.pub \
