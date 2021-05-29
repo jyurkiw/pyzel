@@ -7,4 +7,4 @@ ADD https://github.com/davido/bazel-alpine-package/releases/download/0.26.1/baze
     /tmp/bazel-0.26.1-r0.apk
 RUN apk add /tmp/bazel-0.26.1-r0.apk
 RUN rm -rf /tmp/*
-RUN mkdir /app; touch /app/WORKSPACE
+RUN mkdir /app; touch /app/WORKSPACE; ln -s /usr/bin/python3 /usr/bin/python
